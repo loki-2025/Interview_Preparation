@@ -5,7 +5,7 @@ def first_non_repeating_character(string):
             counter[char] += 1
         else:
             counter[char] = 1
-    for item, value in counter.item():
-        if value == 1:
-            return item
+    for char in string:
+        if counter[string] == 1:
+            return char
     return None
