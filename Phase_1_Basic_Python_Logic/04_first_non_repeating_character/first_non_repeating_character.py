@@ -6,6 +6,6 @@ def first_non_repeating_character(string):
         else:
             counter[char] = 1
     for char in string:
-        if counter[string] == 1:
+        if counter[char] == 1:
             return char
     return None
